@@ -33,6 +33,8 @@ namespace PiedPiper
             var synth = new Windows.Media.SpeechSynthesis.SpeechSynthesizer();
             Windows.Media.SpeechSynthesis.SpeechSynthesisStream stream = await synth.SynthesizeTextToStreamAsync("Pied Piper is a middle-out compression solution, making data storage problems smaller.");
             boomButton.SetSource(stream, stream.ContentType);
+            int zero = 0;
+            int boom = 10 / zero;
             boomButton.Play();
         }
     }
