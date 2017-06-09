@@ -14,6 +14,9 @@ using Windows.UI.Xaml.Data;
 using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
+using Microsoft.Azure.Mobile;
+using Microsoft.Azure.Mobile.Crashes;
+using Microsoft.Azure.Mobile.Analytics;
 
 namespace PiedPiper
 {
@@ -39,6 +42,7 @@ namespace PiedPiper
         /// <param name="e">Details about the launch request and process.</param>
         protected override void OnLaunched(LaunchActivatedEventArgs e)
         {
+            MobileCenter.Start("fb6c69af-b91b-4258-be22-648497916e33", typeof(Crashes));
 #if DEBUG
             if (System.Diagnostics.Debugger.IsAttached)
             {
