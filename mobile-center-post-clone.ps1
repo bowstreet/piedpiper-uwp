@@ -1,1 +1,1 @@
-Install-Package NuGet.VisualStudio -Version 4.2.0
+dotnet add package NuGet.CommandLine --version 4.3.0
